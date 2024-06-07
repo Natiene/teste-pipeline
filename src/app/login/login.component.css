@@ -1,0 +1,155 @@
+/* Estilos do formulário de login */
+.wrapper {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.login_container {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  height: 85%;
+  margin: auto;
+}
+
+.login_container__left {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+}
+
+.login_container__right {
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.login_form_wrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 461px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login_form_wrapper h4 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-style: normal;
+  color: #212529;
+}
+
+input.ng-invalid.ng-touched {
+  border: 0.9px solid #dc3545;
+}
+
+small {
+  color: #dc3545;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.main_btn {
+  background: #032033;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+  height: 32px;
+}
+
+.main_btn:hover {
+  color: #fff;
+}
+
+.redirect {
+  margin-top: 20px;
+}
+
+.invalid_msg {
+  display: flex;
+  align-items: center;
+  font-size: 0.69rem;
+}
+
+.invalid_msg .material-icons {
+  margin-right: 5px;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.form-control {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.regular_text_two {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #7d7373;
+}
+
+.login_form_wrapper form {
+  margin-top: 20px;
+}
+
+.login_form_wrapper .form_check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_form_wrapper a {
+  color: #032033;
+  font-weight: 500;
+}
