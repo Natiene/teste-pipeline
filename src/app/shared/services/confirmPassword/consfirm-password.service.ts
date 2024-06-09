@@ -1,28 +1,3 @@
-// import { Injectable } from '@angular/core';
-// import { AbstractControl, ValidationErrors } from '@angular/forms';
-
-// @Injectable({
-//   providedIn: 'root',
-// })
-// export class ConsfirmPasswordService {
-//   static MatchingPassword(control: AbstractControl) {
-//     const password = control.get('password')?.value;
-//     const confirmPassword = control.get('confirm_password').value;
-//     const currentErrors = control.get('confirm_password').errors;
-//     const confirmControl = control.get('confirm_password');
-
-//     if (compare(password, confirmPassword)) {
-//       confirmControl?.setErrors({ ...currentErrors, not_matching: true });
-//     } else {
-//       confirmControl?.setErrors(currentErrors);
-//     }
-//   }
-// }
-
-// function compare(password: string, confirmPassword: string) {
-//   return password !== confirmPassword && confirmPassword !== '';
-// }
-
 import { Injectable } from '@angular/core';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 
