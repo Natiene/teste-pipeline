@@ -8,14 +8,14 @@ import {
 import { CommonModule } from '@angular/common';
 import { PatternValidatorsService } from '../../shared/services/patternValidators/pattern-validators.service';
 import { ConfirmPasswordService } from '../../shared/services/confirmPassword/consfirm-password.service';
-import { TEXTS } from './login.texts';
+import { TEXTS } from './register.texts';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css',
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css',
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup = new FormGroup({}); // Valor inicial vazio
