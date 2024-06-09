@@ -6,8 +6,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { PatternValidatorsService } from '../shared/services/patternValidators/pattern-validators.service';
-import { ConfirmPasswordService } from '../shared/services/confirmPassword/consfirm-password.service';
+import { PatternValidatorsService } from '../../shared/services/patternValidators/pattern-validators.service';
+import { ConfirmPasswordService } from '../../shared/services/confirmPassword/consfirm-password.service';
 
 @Component({
   selector: 'app-login',
