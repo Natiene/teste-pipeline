@@ -7,7 +7,7 @@ import {
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { PatternValidatorsService } from '../../shared/services/patternValidators/pattern-validators.service';
-import { ConfirmPasswordService } from '../../shared/services/confirmPassword/consfirm-password.service';
+import { ConfirmPasswordService } from '../../shared/services/confirmPassword/confirm-password.service';
 import { TEXTS } from './register.texts';
 
 @Component({

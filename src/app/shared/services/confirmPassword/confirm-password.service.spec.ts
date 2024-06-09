@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ConfirmPasswordService } from './consfirm-password.service';
+import { ConfirmPasswordService } from './confirm-password.service';
 
 describe('ConfirmPasswordService', () => {
   let service: ConfirmPasswordService;
