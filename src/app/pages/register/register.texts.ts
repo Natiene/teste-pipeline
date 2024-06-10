@@ -22,5 +22,9 @@ export const TEXTS = {
   mustContainAtLeast1Number: 'Precisa conter pelo menos 1 número!',
   mustContainAtLeast1InCapitalCase: 'Precisa conter pelo menos 1 letra maiúscula!',
   mustContainAtLeast1InSmallCase: 'Precisa conter pelo menos 1 letra minúscula!',
-  mustContainAtLeast1SpecialCharacter: 'Precisa conter pele menos 1 caracter especial!'
+  mustContainAtLeast1SpecialCharacter: 'Precisa conter pele menos 1 caracter especial!',
+
+  /**Alert messages */
+  success: 'Sucesso',
+  registrationSuccessful: "Registrado com sucesso!"
 };

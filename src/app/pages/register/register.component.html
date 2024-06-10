@@ -5,6 +5,10 @@
         </div>
         <div class="login_container__right">
             <div class="login_form_wrapper">
+                <div *ngIf="showAlert" class="alert" [ngClass]="{'success': alertType === 'success', 'error': alertType === 'error'}">
+                    <h3>{{ alertTitle }}</h3>
+                    <p>{{ alertMessage }}</p>
+                  </div>                
                 <h4>{{texts.register}}</h4>
                 <p>{{texts.createAccount}}</p>
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">

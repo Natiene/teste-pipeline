@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import {
   ReactiveFormsModule,
   FormBuilder,
@@ -22,6 +22,10 @@ export class LoginComponent implements OnInit {
   isSignedIn = false;
   siteKey = '6Lc6tWclAAAAAFeRdj952i55fLgWgaoDuqST8EBA';
   texts = TEXTS;
+  showAlert: boolean = false; 
+  alertType: string = ''; 
+  alertTitle: string = ''; 
+  alertMessage: string = '';
 
   constructor(private fb: FormBuilder) {}
 
@@ -109,5 +113,25 @@ export class LoginComponent implements OnInit {
   }
 
   // submit data
-  onSubmit() {}
+  onSubmit() {
+    if (this.loginForm.valid) {
+      this.showAlert = true;
+      this.alertType = 'success';
+      this.alertTitle = this.texts.success
+      this.alertMessage = this.texts.registrationSuccessful
+    } 
+  }
+
+  clearForm() {
+    this.loginForm.reset();
+  }
+
+  @HostListener('document:keydown.escape', ['$event']) 
+  handleEscape(event: KeyboardEvent) {
+   
+    if (event.key === "Escape") {
+      this.showAlert = false;
+      this.clearForm(); 
+    }
+  }
 }
