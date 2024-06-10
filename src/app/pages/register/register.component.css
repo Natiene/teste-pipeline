@@ -1,33 +1,33 @@
-/* Estilos do formulário de login */
-.wrapper {
-  width: 90%;
+.login_container {
+  width: 100%;
   margin: auto;
   height: 100vh;
   display: flex;
-  align-items: center;
 }
 
-.login_container {
-  display: flex;
-  width: 100%;
-  border-radius: 5px;
-  height: 85%;
-  margin: auto;
-}
-
-.login_container__left {
-  flex: 1;
+.login_container__right {
+  flex: 2;
   padding: 20px;
   background-color: var(--main-bg);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.login_container__right {
+.login_container__left {
+  flex: 1;
   padding: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container__left img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .login_form_wrapper {
