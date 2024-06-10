@@ -1,3 +1,45 @@
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .login_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login_container__right,
+  .login_container__left {
+    flex: 1;
+    padding: 20px;
+    height: auto;
+    /* max-width: 100%; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login_container__left img {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .login_form_wrapper {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Estilos para tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login_container__left,
+  .login_container__right {
+    padding: 20px;
+  }
+
+  .login_form_wrapper {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Estilos compartilhados para todos os dispositivos */
 .login_container {
   width: 100%;
   margin: auto;
@@ -46,10 +88,6 @@
   font-weight: 500;
   line-height: 45px;
   margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 20px;
 }
 
 .form-group {
