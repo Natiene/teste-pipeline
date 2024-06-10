@@ -123,8 +123,13 @@ small {
   transition: background-color 300ms ease-in-out;
 }
 
-.btn:hover {
+.btn:not([disabled]):hover {
   background-color: var(--btn-hover-bg);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .main_btn {
