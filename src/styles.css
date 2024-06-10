@@ -1,55 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'material-icons/iconfont/material-icons.css';
+@import "material-icons/iconfont/material-icons.css";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #E8F0FC;
-    font-family: 'Roboto', sans-serif;
+  background: #e8f0fc;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
-    font-size: 14.5px;
+  font-size: 14.5px;
 }
 
 a {
-    color: inherit;
-    /* Adjusted from 'none' to 'inherit' */
-    text-decoration: none;
-    cursor: pointer;
+  color: inherit;
+  /* Adjusted from 'none' to 'inherit' */
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover,
 a:focus,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 *:focus {
-    box-shadow: none;
-    /* Removed !important */
+  box-shadow: none;
+  /* Removed !important */
 }
 
 button:focus,
 button:active,
 textarea:focus,
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 input {
-    font-style: normal;
-    color: #212529;
+  font-style: normal;
+  color: #212529;
 }
 
 .material-icons {
-    display: inline-flex;
-    vertical-align: middle;
-    font-size: 0.69rem;
+  display: inline-flex;
+  vertical-align: middle;
+  font-size: 0.69rem;
 }
 
 h4,
@@ -58,16 +58,16 @@ a,
 label,
 span,
 input {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 label {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 18px;
-    color: #032033;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #032033;
 }
 
 h1,
@@ -78,12 +78,19 @@ h5,
 h6,
 p,
 label {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 small {
-    font-size: 0.69rem;
-    font-weight: 500;
-    line-height: 18px;
+  font-size: 0.69rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+/*Variables Colors */
+:root {
+  --main-bg: #ff7700;
+  --main-btn-bg: #ff7700;
+  --btn-hover-bg: black;
 }

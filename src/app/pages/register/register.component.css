@@ -18,7 +18,7 @@
 .login_container__left {
   flex: 1;
   padding: 20px;
-  background-color: #ffff;
+  background-color: var(--main-bg);
   display: flex;
   justify-content: center;
 }
@@ -81,18 +81,16 @@ small {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
   cursor: pointer;
   transition: background-color 300ms ease-in-out;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: var(--btn-hover-bg);
 }
 
 .main_btn {
-  background: #032033;
+  background-color: var(--main-btn-bg);
   border: 0.5px solid rgba(0, 0, 0, 0.2);
   font-weight: 400;
   font-size: 14px;
